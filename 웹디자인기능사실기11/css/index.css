@@ -1,0 +1,198 @@
+@charset="utf-8";
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding: 0;
+}
+body{
+    font-family: "맑은고딕";
+    font-size: 14px;
+    font-weight: 300;
+    color: #222328;
+    background: #fff;
+}
+a:link, a:visited{
+    text-decoration:none;
+    color:#222328;
+}
+
+#wrapper{
+    width:1000px;
+    height: auto;
+}
+
+.header{
+    width: 200px;
+    height: 650px;
+    float: left;
+}
+.header_top{
+    width:200px;
+    height: 50px;
+}
+.header_top img{
+    width: 100%;
+    height: 100%;
+}
+.header_bottom{
+    width:200px;
+    height: 600px;
+}
+.headerbox{
+    margin-top: 100px;
+}
+.title{
+    width:200px;
+    height: 50px;
+    line-height: 50px;
+    background: #eee;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    position:relative;
+}
+.title:hover{
+    background: #bbb;
+}
+.menu{
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 0;
+    height: 300px;
+    background: #bbb;
+    transition:0.5s;
+    overflow: hidden;
+    z-index: 99;
+}
+.menubox{
+    width:200px;
+    height: 300px;
+}
+.menubox a{
+    display: block;
+    width: 200px;
+    height: 50px;
+}
+.menubox a:hover{
+    background: #555;
+    color: #fff;
+}
+.title_1:hover .menu1,
+.title_2:hover .menu2,
+.title_3:hover .menu3,
+.title_4:hover .menu4{
+    width:200px;
+}
+.slide{
+    width:800px;
+    height: 350px;
+    float: left;
+    position:relative;
+    overflow: hidden;
+}
+.slidebox{
+    width:2400px;
+    height: 350px;
+    position:absolute;
+    top: 0;
+    right:0;
+    transition:0.5s;
+}
+.slidebox img{
+    width:800px;
+    height: 350px;
+    float: left;
+    display: block;
+}
+.item{
+    width:800px;
+    height: 200px;
+    float: left;
+}
+.items{
+    width:33.33%;
+    height: 100%;
+    float: left;
+}
+.item_title{
+    width:100px;
+    height: 40px;
+    line-height: 40px;
+    background: #eee;
+    display:block;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+}
+.items p{
+    display: block;
+    padding: 10px;
+}
+.items p:nth-child(even){
+    background: #eee;
+}
+.gall{
+    width:33.33%;
+    height: 150px;
+    padding: 5px;
+    float: left;
+}
+.gall img{
+    width:100%;
+    height: 100%;
+}
+.items img{
+    width:100%;
+    height: 100%;
+}
+.footer{
+    width:800px;
+    height: 100px;
+    float: left;
+}
+.foot_1{
+    width:100px;
+    height: 100%;
+    float: left;
+}
+.foot_1 img{
+    width: 100%;
+    height: 100%;
+}
+.foot_2{
+    width:600px;
+    height: 100%;
+    line-height: 100px;
+    float: left;
+    text-align: center;
+    background: #eee;
+}
+
+.openmodal{
+    width:300px;
+    height: 300px;
+    position:fixed;
+    top: 200px;
+    left: 100px;
+    z-index: 999;
+    background: #555;
+    display: none;
+}
+.modalh{
+    padding:30px;
+    display: block;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 900;
+}
+.itemp{
+    cursor: pointer;
+}
+.close{
+    position:absolute;
+    top: 90%;
+    left: 80%;
+    color: #fff;
+    cursor: pointer;
+}
